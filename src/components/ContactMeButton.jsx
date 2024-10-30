@@ -10,9 +10,12 @@ const ContactMeButton = ({ link, linkText, targetBlank = false }) => {
         // gap: "0.8rem",
       }}
     >
-      <motion.div className="btn-div" whileHover="hover">
+      <motion.div
+        className="relative inline-block min-w-36 h-11 md:min-w-[180px] md:h-[50px]"
+        whileHover="hover"
+      >
         <motion.div
-          className="bg-btn"
+          className="absolute inset-0 bg-black text-white  border-gray-950"
           variants={{
             hover: { x: 6, y: 8 }, // bg-btn moves to the right
           }}
@@ -20,7 +23,7 @@ const ContactMeButton = ({ link, linkText, targetBlank = false }) => {
         />
         <a href={link} target={targetBlank ? "_blank" : null}>
           <motion.button
-            className="btn-btn"
+            className="relative z-10 px-4 py-2 bg-white border-[1px] border-black w-full h-full"
             variants={{
               hover: { x: -6 }, // button moves to the left
             }}

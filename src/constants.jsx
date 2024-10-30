@@ -10,7 +10,17 @@ import {
 } from "react-icons/si";
 import { TiWeatherCloudy } from "react-icons/ti";
 
-
+export const SkillList = [
+    { icon: <FaBootstrap />, alt: 'Bootstrap' },
+    { icon: <SiTailwindcss />, alt: 'Tailwind CSS' },
+    { icon: <SiJavascript />, alt: 'JavaScript' },
+    { icon: <FaReact />, alt: 'React' },
+    { icon: <SiRedux />, alt: 'Redux' },
+    { icon: <FaNodeJs />, alt: 'Node.js' },
+    { icon: <SiMongodb />, alt: 'MongoDB' },
+    { icon: <SiExpress />, alt: 'Express.js' },
+    { icon: <SiFirebase />, alt: 'Firebase' }
+]
 
 export const ProjectList = [
   {

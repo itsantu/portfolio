@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -28,19 +29,22 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <nav
+    <motion.nav
+    initial={{ opacity: 0 }}
+    animate={{ opacity: showNavbar? 1: 0 }}
+    transition={{ duration: 1 }}
       className={`fixed top-4 left-1/2 -translate-x-1/2 w-4/5 md:w-[40%] mx-auto bg-slate-200 z-50 rounded-3xl shadow-lg hover:bg-slate-100 hover:shadow-2xl hover:scale-105 duration-300 transition-all transform ${
         showNavbar ? 'translate-y-0' : '-translate-y-28'
       }`}
     >
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <div className=" text-md font-bold font-felixti"><a href='#hero'>Antu Mallick</a></div>
+      <div className="container mx-auto px-4 py-1 md:py-2 flex justify-between items-center">
+        <div className="text-[0.8rem] md:text-[1rem] font-bold font-felixti"><a href='#hero'>Antu Mallick</a></div>
         <ul className="flex space-x-4">
-          <li className=" cursor-pointer px-3 py-2 rounded-full hover:bg-slate-300 duration-150"><a href='#works'>Works</a></li>
-          <li className=" cursor-pointer px-3 py-2 rounded-full hover:bg-slate-300 duration-150"><a href='#contact'>Contact</a></li>
+          <li className=" cursor-pointer p-1 md:px-3 md:py-2 rounded-full hover:bg-slate-300 duration-150"><a href='#works'>Works</a></li>
+          <li className=" cursor-pointer p-1 md:px-3 md:py-2 rounded-full hover:bg-slate-300 duration-150"><a href='#contact'>Contact</a></li>
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

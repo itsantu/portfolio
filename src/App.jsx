@@ -1,23 +1,15 @@
-import React from 'react'
-import Navbar from './sections/Navbar'
-import Hero from './sections/Hero'
-import Skill from './sections/Skill'
-import Works from './sections/Works'
-import Contact from './sections/Contact'
-import Footer from './sections/Footer'
-import Projects from './sections/Projects'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import ProjectView from './pages/ProjectView'
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <Skill/>
-      <Projects/>
-      {/* <Works/> */}
-      <Contact/>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:id" element={<ProjectView />} />
+      </Routes>
+    </Router>
   )
 }
 
