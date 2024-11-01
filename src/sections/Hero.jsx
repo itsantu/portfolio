@@ -3,7 +3,7 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import profileImage from "/images/profile_picture.jpg";
 import { motion } from "framer-motion";
-import ContactMeButton from "../components/ContactMeButton";
+import ContactMeButton from "../components/Buttons/ContactMeButton";
 
 const HeroSection = () => {
   return (

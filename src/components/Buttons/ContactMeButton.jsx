@@ -6,8 +6,6 @@ const ContactMeButton = ({ link, linkText, targetBlank = false }) => {
     <div
       style={{
         marginTop: "2rem",
-        // display: "grid",
-        // gap: "0.8rem",
       }}
     >
       <motion.div
@@ -17,7 +15,7 @@ const ContactMeButton = ({ link, linkText, targetBlank = false }) => {
         <motion.div
           className="absolute inset-0 bg-black text-white  border-gray-950"
           variants={{
-            hover: { x: 6, y: 8 }, // bg-btn moves to the right
+            hover: { x: 6, y: 8 }, 
           }}
           transition={{ duration: 0.2 }}
         />
@@ -25,7 +23,7 @@ const ContactMeButton = ({ link, linkText, targetBlank = false }) => {
           <motion.button
             className="relative z-10 px-4 py-2 bg-white border-[1px] border-black w-full h-full"
             variants={{
-              hover: { x: -6 }, // button moves to the left
+              hover: { x: -6 }, 
             }}
             whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.2 }}

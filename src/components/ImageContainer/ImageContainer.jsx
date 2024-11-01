@@ -1,15 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ContactMeButton from "../ContactMeButton";
+import ContactMeButton from "../Buttons/ContactMeButton";
 import RouterButton from "../Buttons/RouterButton";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ImageContainer = ({ projectDesc }) => {
   const {
     id,
     name,
     primaryImage,
-    description,
     shortDescription,
     liveLink,
     techStack,
@@ -22,8 +21,8 @@ const ImageContainer = ({ projectDesc }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: .3 }}
     >
-      <div className="flex flex-col sm:flex-row items-center justify-center overflow-hidden p-10">
-        <img
+      <div className="flex flex-col md:flex-row items-center justify-center overflow-hidden p-10">
+        <LazyLoadImage
           className="w-full md:w-2/5 h-auto max-w-full object-cover border-[5px] shadow-2xl rounded-2xl hover:scale-105 duration-300"
           src={primaryImage}
           alt="alt text goes here"

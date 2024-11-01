@@ -98,6 +98,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              required
               className="w-full py-1 bg-transparent mb-6 border-b-[1px] border-gray-300 text-gray-200 focus:outline-none"
             />
             <label className="text-gray-400">Email</label>
@@ -106,6 +107,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
+              required
               className="w-full py-1 bg-transparent mb-6 border-b-[1px] border-gray-300 text-gray-200 focus:outline-none"
             />
             <label className="text-gray-400">Type your message here</label>
@@ -114,6 +116,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
+              required
               className="w-full py-1 bg-transparent mb-6 border-b-[1px] border-gray-300 text-gray-200 focus:outline-none"
             ></textarea>
             <button

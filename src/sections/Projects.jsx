@@ -1,11 +1,8 @@
 import React, { useRef } from "react";
-import "./Projects.css";
-import Two from "/images/weatherapp.webp";
-
-import Three from "/images/helloworldsocial.webp"
 import { motion, useScroll, useTransform } from "framer-motion";
-import ImageContainer from "../components/ImageContainer/ImageContainer";
+import "./Projects.css";
 
+import ImageContainer from "../components/ImageContainer/ImageContainer";
 import { ProjectList } from "../constants";
 
 const Projects = () => {

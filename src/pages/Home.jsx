@@ -9,14 +9,13 @@ import ScrollToTopButton from "../components/Buttons/ScrollToTopButton";
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div >
       <Navbar />
       <HeroSection />
       <Skill />
       <Projects />
       {/* <Works/> */}
       <Contact />
-      <Footer />
       <ScrollToTopButton/>
     </div>
   );
