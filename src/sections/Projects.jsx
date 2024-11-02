@@ -12,7 +12,7 @@ const Projects = () => {
   const x = useTransform(scrollYProgress, [0,0.1, 1], ["0%","0%", "-105%"]);
 
   return (
-    <div className="h-[400vh]" ref={targetRef} id="works">
+    <div className="h-[150vh] md:h-[350vh] " ref={targetRef} id="works">
       <div className="h-screen sticky top-0 flex flex-col pt-16 md:pt-12 overflow-hidden">
         <h1 className="text-4xl text-center font-semibold text-gray-800 mb-4">
           Projects

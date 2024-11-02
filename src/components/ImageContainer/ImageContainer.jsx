@@ -24,7 +24,7 @@ const ImageContainer = ({ projectDesc }) => {
         <img
           className="w-full md:w-2/5 h-auto max-w-full object-cover border-[5px] shadow-2xl rounded-2xl hover:scale-105 duration-300"
           src={primaryImage}
-          alt="alt text goes here"
+          alt="Primary Image"
         />
 
         <div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-4 p-2 md:p-4">
