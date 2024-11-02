@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import profileImage from "/images/profile_picture.jpg";
 import { motion } from "framer-motion";
 import ContactMeButton from "../components/Buttons/ContactMeButton";
+import RouterButton from "../components/Buttons/RouterButton";
 
 const HeroSection = () => {
   return (
@@ -57,7 +58,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
+          className="flex items-center gap-4"
         >
+          <RouterButton linkText="View Resume ↗" link="https://drive.google.com/file/d/1Dr5l3N_IV-2YYDFgqF0jJeFNi9uBgPOP/view?usp=sharing" targetBlank={true} />
           <ContactMeButton linkText="Contact Me ↗" link="#contact" />
         </motion.div>
 
