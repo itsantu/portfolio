@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import ContactMeButton from "../Buttons/ContactMeButton";
 import RouterButton from "../Buttons/RouterButton";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ImageContainer = ({ projectDesc }) => {
   const {
@@ -23,10 +21,9 @@ const ImageContainer = ({ projectDesc }) => {
       transition={{ duration: 0.5, delay: .3 }}
     >
       <div className="flex flex-col md:flex-row items-center justify-center overflow-hidden p-10">
-        <LazyLoadImage
+        <img
           className="w-full md:w-2/5 h-auto max-w-full object-cover border-[5px] shadow-2xl rounded-2xl hover:scale-105 duration-300"
           src={primaryImage}
-          effect="blur"
           alt="alt text goes here"
         />
 
