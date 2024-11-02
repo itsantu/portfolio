@@ -135,7 +135,7 @@ export const ProjectList = [
       {
         name: "Realtime Weather",
         description: "Get live weather updates for any location.",
-        imgSource: "/images/weatherapp.webp",
+        imgSource: "/images/weather.webp",
       },
       {
         name: "Responsive Design",

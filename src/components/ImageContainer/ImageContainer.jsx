@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ContactMeButton from "../Buttons/ContactMeButton";
 import RouterButton from "../Buttons/RouterButton";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ImageContainer = ({ projectDesc }) => {
   const {
@@ -25,6 +26,7 @@ const ImageContainer = ({ projectDesc }) => {
         <LazyLoadImage
           className="w-full md:w-2/5 h-auto max-w-full object-cover border-[5px] shadow-2xl rounded-2xl hover:scale-105 duration-300"
           src={primaryImage}
+          effect="blur"
           alt="alt text goes here"
         />
 

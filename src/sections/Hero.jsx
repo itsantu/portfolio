@@ -31,7 +31,7 @@ const HeroSection = () => {
             <span className="text-6xl md:text-8xl">ANTU</span>
             <motion.img
               src={profileImage}
-              alt="Profile"
+              alt="Antu Mallick Profile Picture"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}

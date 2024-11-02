@@ -5,6 +5,8 @@ import { Link, useParams } from "react-router-dom";
 import Features from "../components/ProjectPage/Features";
 import TechStack from "../components/ProjectPage/TechStack";
 import ScrollToTop from "../components/ScrollToTop";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ProjectView = () => {
   const { projectId } = useParams();
@@ -33,9 +35,10 @@ const ProjectView = () => {
             </button>
           </div>
           <div className="mb-10 ">
-            <img
+            <LazyLoadImage
               src={secondaryImage}
               alt="project"
+              effect="blur"
               className="w-full rounded-2xl shadow-xl"
             />
           </div>
