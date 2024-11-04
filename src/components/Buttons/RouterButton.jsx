@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const RouterButton = ({ link, linkText, targetBlank = false }) => {
   return (
-    <div className="mt-8 grid gap-2">
+    <div className="mt-[4vh] md:mt-[2rem] grid gap-2">
       <motion.div
-        className="relative inline-block min-w-36 h-11 md:min-w-[180px] md:h-[50px]"
+        className="relative inline-block min-w-32 h-11 md:min-w-[180px] md:h-[50px]"
         whileHover="hover"
       >
         <motion.div
@@ -32,7 +32,7 @@ const RouterButton = ({ link, linkText, targetBlank = false }) => {
         ) : (
           <Link to={`/projects/${link}`}>
             <motion.button
-              className="relative z-10 px-4 py-2 bg-black text-sm md:text-lg text-white w-full h-full"
+              className="relative z-10 px-2 md:px-4 py-2 bg-black text-[12px] md:text-lg text-white w-full h-full"
               variants={{
                 hover: { x: -6 },
               }}

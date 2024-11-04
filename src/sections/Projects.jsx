@@ -13,7 +13,7 @@ const Projects = () => {
 
   return (
     <div className="h-[150vh] md:h-[350vh] " ref={targetRef} id="works">
-      <div className="h-screen sticky top-0 flex flex-col pt-16 md:pt-12 overflow-hidden">
+      <div className="h-screen sticky top-0 flex flex-col pt-[6vh] md:pt-12 overflow-hidden">
         <h1 className="text-4xl text-center font-semibold text-gray-800 mb-4">
           Projects
         </h1>

@@ -3,11 +3,11 @@ import { FaGithub, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="p-20 pt-7 pb-3 border-t border-gray-400 flex justify-center items-center flex-wrap gap-5">
+    <section className="md:p-10 pt-7  border-t border-gray-400 flex justify-center items-center flex-wrap gap-5">
     <div className="flex flex-col items-center gap-3">
 
     {/* Social Links */}
-      <div className="flex gap-4 mb-6">
+      <div className="flex gap-4 mb-1 md:mb-6">
         <div className="social-icon cursor-pointer">
           <a href="https://github.com/itsantu" target="_blank">
             <FaGithub className="text-gray-500 hover:text-gray-800 duration-100 w-6 h-6" />

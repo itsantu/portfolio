@@ -38,13 +38,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-2 py-1 flex justify-between items-center">
-        <div className="text-[0.8rem] md:text-[1rem] font-bold font-felixti">
+        <div className="text-[0.7rem] md:text-[1rem] font-bold font-felixti">
         <img src='android-chrome-192x192.png' alt='Antu Mallick Logo' className='h-8 w-8 md:w-10 md:h-10 inline-block mr-2' />
         <a href='#hero'>Antu Mallick</a>
         </div>
-        <ul className="flex space-x-4">
-          <li className="text-sm md:text-lg cursor-pointer p-1 md:px-3 md:py-2 rounded-full hover:bg-slate-300 duration-150"><a href='#works'>Works</a></li>
-          <li className="text-sm md:text-lg cursor-pointer p-1 md:px-3 md:py-2 rounded-full hover:bg-slate-300 duration-150"><a href='#contact'>Contact</a></li>
+        <ul className="flex space-x-2">
+          <li className="text-sm md:text-lg cursor-pointer p-1 md:px-3 md:py-1 rounded-full hover:bg-slate-200 duration-150"><a href='#works'>Works</a></li>
+          <li className="text-sm md:text-lg cursor-pointer p-1 md:px-3 md:py-1 rounded-full hover:bg-slate-200 duration-150"><a href='#contact'>Contact</a></li>
         </ul>
       </div>
     </motion.nav>

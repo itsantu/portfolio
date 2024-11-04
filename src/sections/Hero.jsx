@@ -13,16 +13,16 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative flex flex-col items-center justify-center h-full bg-gradient-to-b from-white to-slate-300 text-center rounded-3xl p-4 pt-[10vh]"
+        className="relative flex flex-col items-center justify-center h-full bg-gradient-to-br   from-white to-slate-400 shadow-2xl text-center rounded-3xl p-4 pt-[10vh]"
       >
         {/* Title Animation */}
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-5xl md:text-7xl tracking-widest text-gray-900 leading-tight font-felixti"
+          className=" tracking-widest text-gray-900 leading-tight font-felixti"
         >
-          <span className="text-gray-600">HEY,</span> <br />
+          <span className="text-[2.8rem] md:text-6xl text-gray-500">HEY,</span> <br />
           <motion.span
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -36,9 +36,9 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="w-28 h-28 md:w-36 md:h-36 rounded-full shadow-md"
+              className="w-36 h-36 md:w-36 md:h-36 rounded-full shadow-xl"
             />
-            <span className="text-gray-600 mb-4">HERE</span>
+            <span className="text-4xl md:text-8xl text-gray-500 mb-4 md:mb-0">HERE</span>
           </motion.span>
         </motion.h1>
 
@@ -49,8 +49,8 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="text-4xl md:text-7xl tracking-widest text-gray-900 leading-tight font-felixti"
         >
-          <span className="text-4xl md:text-8xl mb-2 inline-block">FULL STACK</span> <br />
-          <span className="text-gray-600">DEVELOPER</span>
+          <span className="text-[2.7rem] md:text-8xl mb-2 inline-block">FULL STACK</span> <br />
+          <span className="text-gray-500">DEVELOPER</span>
         </motion.h2>
 
         {/* Button Animation */}
@@ -69,28 +69,28 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="absolute flex flex-col items-center justify-center gap-5 right-2 mt-8"
+          className="absolute flex md:flex-col items-center justify-center gap-3 md:gap-5 bottom-3 md:right-2 mt-8"
         >
           <a
             href="https://github.com/itsantu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="text-3xl text-gray-700 hover:text-gray-600" />
+            <FaGithub className="text-[1.7rem] md:text-3xl text-white hover:text-gray-700 duration-100 hover:scale-110" />
           </a>
           <a
             href="https://linkedin.com/in/antu-mallick"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-3xl text-gray-700 hover:text-gray-600" />
+            <FaLinkedin className="text-[1.7rem] md:text-3xl text-white hover:text-gray-700 duration-100 hover:scale-110" />
           </a>
           <a
             href="https://x.com/AntuMallick87?t=Jbc6iFx2PWxCRSFhQ3EMnA&s=08"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="text-3xl text-gray-700 hover:text-gray-600" />
+            <FaTwitter className="text-[1.7rem] md:text-3xl text-white hover:text-gray-700 duration-100 hover:scale-110" />
           </a>
         </motion.div>
       </motion.div>
