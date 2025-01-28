@@ -36,7 +36,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="w-36 h-36 md:w-36 md:h-36 rounded-full shadow-xl"
+              className="w-36 h-36 md:w-36 md:h-36 rounded-full shadow-xl hover:shadow-2xl duration-200 hover:scale-110"
             />
             <span className="text-4xl md:text-8xl text-gray-500 mb-4 md:mb-0">HERE</span>
           </motion.span>
@@ -49,7 +49,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="text-4xl md:text-7xl tracking-widest text-gray-900 leading-tight font-felixti"
         >
-          <span className="text-[2.7rem] md:text-8xl mb-2 inline-block">FULL STACK</span> <br />
+          <span className="bg-gradient-to-r from-blue-400 to-purple-700 bg-clip-text text-transparent text-[2.7rem] md:text-8xl mb-2 inline-block">FULL STACK</span> <br />
           <span className="text-gray-500">DEVELOPER</span>
         </motion.h2>
 
@@ -60,7 +60,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 1 }}
           className="flex items-center gap-4"
         >
-          <RouterButton linkText="View Resume ↗" link="https://drive.google.com/file/d/1Dr5l3N_IV-2YYDFgqF0jJeFNi9uBgPOP/view?usp=sharing" targetBlank={true} />
+          <RouterButton linkText="View Resume ↗" link="https://drive.google.com/file/d/1KscP_DLloFoF95w6k2LlXqlOaON84ZKu/view?usp=sharing" targetBlank={true} />
           <ContactMeButton linkText="Contact Me ↗" link="#contact" />
         </motion.div>
 

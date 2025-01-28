@@ -19,7 +19,7 @@ const RouterButton = ({ link, linkText, targetBlank = false }) => {
         {targetBlank ? (
           <a href={link} target="_blank" rel="noreferrer">
             <motion.button
-              className="relative z-10 px-4 py-2 bg-gray-700 hover:bg-gradient-to-br hover:from-gray-700 hover:to-gray-600 text-sm md:text-lg text-white w-full h-full duration-150"
+              className="relative z-10 px-4 py-2 bg-gray-700 hover:bg-gradient-to-br hover:from-gray-700 hover:to-blue-800 text-sm md:text-lg text-white w-full h-full duration-150"
               variants={{
                 hover: { x: -6 },
               }}
